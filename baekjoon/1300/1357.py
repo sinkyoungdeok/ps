@@ -7,4 +7,4 @@ rev_xy = [int(i[::-1]) for i in input().split(" ")]
 
 result = sum(rev_xy)
 
-print( str(result)[::-1])
+print( int(str(result)[::-1]))
