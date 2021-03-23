@@ -6,4 +6,4 @@
 ``` https://ucpc.me/ ``` </br>
 2. Startup Coding Festival 2021 round1 합격 ( 2021년 3월 20일 )
 ``` https://scofe2021.goorm.io/apply/assessment/25665/startup-coding-festival-2021 ``` </br>
-<img width="1000" height="200" alt="캡처" src="https://user-images.githubusercontent.com/28394879/112164919-a38ac980-8c31-11eb-9cab-6d7b46269a3c.png"> 
+<img width="800" height="200" alt="캡처" src="https://user-images.githubusercontent.com/28394879/112164919-a38ac980-8c31-11eb-9cab-6d7b46269a3c.png"> 
