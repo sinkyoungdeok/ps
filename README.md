@@ -2,7 +2,6 @@
 ### 백준 & solved.ac
 - https://www.acmicpc.net/user/tlsrudejr123
 - https://solved.ac/profile/tlsrudejr123
-### 시작: 2021년 3월 21
 ### 대회 참여 정보
 1. ucpc 본선 진출 ( 2020년 8월 14일 )
 ``` https://ucpc.me/ ``` </br>
