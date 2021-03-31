@@ -1,6 +1,6 @@
 """
 문제 링크: https://www.acmicpc.net/problem/4963
-문제 접근 방법: dfs
+문제 접근 방법: bfs , dfs(재귀함수) 로 접근했다가 python의 stack메모리가 작아서 런타임 에러 뜨는 것을 발견하여 bfs로 방법을 바꿔서 풀었다.
 """
 
 from collections import deque
