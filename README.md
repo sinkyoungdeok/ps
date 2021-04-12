@@ -12,4 +12,4 @@
 - <img width="600" height="300" alt="캡처" src="https://user-images.githubusercontent.com/28394879/112164919-a38ac980-8c31-11eb-9cab-6d7b46269a3c.png"> 
 
 3. baekjoon 1000 solve ( 2021년 4월 12일 )
-- <img width="400" height="200" alt="캡처" src="https://user-images.githubusercontent.com/28394879/114341285-5cd72200-9b94-11eb-9ca3-8938d805715f.png"
+- <img width="400" height="200" alt="캡처" src="https://user-images.githubusercontent.com/28394879/114341285-5cd72200-9b94-11eb-9ca3-8938d805715f.png">
