@@ -1,6 +1,6 @@
 """
 문제 링크: https://www.acmicpc.net/problem/1806
-문제 접근 방법: dp
+문제 접근 방법: 두 포인터
 """
 
 N, S = map(int, input().split())
