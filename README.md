@@ -1,4 +1,9 @@
 ### python으로 알고리즘 1일 1문제 
+- 월요일: dfs, bfs
+- 화요일: dp
+- 수요일: 구현
+- 목요일: 투포인터
+- 금요일: 그리디, 브루트 포스
 ### 백준 & solved.ac
 - https://www.acmicpc.net/user/tlsrudejr123
 - https://solved.ac/profile/tlsrudejr123
