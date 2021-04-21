@@ -45,23 +45,22 @@ for i in range(R):
         B_main[i][j] += B_temp[i][j]
         B_temp[i][j] = 0 
 
-# 공기 청정기 작동 (위)
+# 공기 청정기 작동 (위) .. B_temp를 활용해야 할듯
 ci = clean_up_i
 cj = clean_up_j + 1
-temp = 0
+temp_cur = B_main[ci][cj]
+temp_next = B_main[ci][cj+1]
 while cj + 1 < C:
     ni = ci
     nj = cj + 1
-    print(ni,nj)
     
-    temp_cur = B_main[ci][cj]
-    B_main[ci][cj] = temp
-    temp = B_main[ni][nj]
-    B_main[ni][nj] = temp_cur
+    temp = B_main[ci][cj]
+    B_main[ci][cj] = temp_next
+    temp_cur = B_main[ni][nj]
+    B_main[ni][nj] = temp_next
+    temp_next = 
 
     cj = nj
 
 for i in B_main:
     print(i)
-
-""" 아직 구현중 """
