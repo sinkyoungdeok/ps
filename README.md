@@ -4,6 +4,7 @@
 - 수요일: 구현
 - 목요일: 투포인터
 - 금요일: 그리디 
+- 주말: 다익스트라
 ### 백준 & solved.ac
 - https://www.acmicpc.net/user/tlsrudejr123
 - https://solved.ac/profile/tlsrudejr123
