@@ -40,5 +40,9 @@ one_table = dijkstra(1)
 v1_table = dijkstra(v1)
 v2_table = dijkstra(v2)
 
-print( min(one_table[v1] + v1_table[v2] + v2_table[N], one_table[v2] + v2_table[v1] + v1_table[N] ) )
-    
+res= min(one_table[v1] + v1_table[v2] + v2_table[N], one_table[v2] + v2_table[v1] + v1_table[N] ) 
+
+if res == INF:
+    print(-1)
+else:
+    print(res)
