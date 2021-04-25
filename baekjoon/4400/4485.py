@@ -1,5 +1,5 @@
 """
-문제 링크: https://www.acmicpc.net/problem/13549
+문제 링크: https://www.acmicpc.net/problem/4485
 문제 접근 방법: 다익스트라
 """
 
