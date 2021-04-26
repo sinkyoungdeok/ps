@@ -25,8 +25,6 @@ for i in range(1, N+1):
 
 while q:
     curr = q.popleft()
-    print(curr)
-
     res[curr] += cost[curr]
 
     for ne in graph[curr]:
