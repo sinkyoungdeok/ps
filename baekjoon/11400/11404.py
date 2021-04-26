@@ -6,7 +6,7 @@
 n = int(input())
 m = int(input())
 
-INF = 200000
+INF = 200000000
 F = [[INF] * n for _ in range(n) ]
 
 for i in range(n):
