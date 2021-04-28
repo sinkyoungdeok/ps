@@ -1,6 +1,6 @@
 """
 문제 링크: https://programmers.co.kr/learn/courses/30/lessons/17676
-문제 접근 방법: 구현
+문제 접근 방법: bfs
 """
 
 from collections import deque
