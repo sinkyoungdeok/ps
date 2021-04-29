@@ -1,6 +1,6 @@
 """
 문제 링크: https://programmers.co.kr/learn/courses/30/lessons/64061
-문제 접근 방법: 
+문제 접근 방법: 스택, 구현 
 """
 
 def solution(board, moves):
