@@ -31,20 +31,7 @@ def solution(n, t, m, timetable):
     hh = answer // 60
     mm = answer % 60
 
-    if hh < 10:
-        answer = "0" + str(hh)
-    elif hh == 0:
-        answer = "00"
-    else:
-        answer = str(hh)
-    answer += ":"
-    if mm < 10:
-        answer += "0" + str(mm)
-    elif mm == 0:
-        answer += "00"
-    else:
-        answer += str(mm)
-    return answer
+    return '%02d:%02d' % (hh, mm)
 
 n = 1
 t = 1
