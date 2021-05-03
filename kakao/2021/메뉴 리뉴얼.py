@@ -3,25 +3,22 @@
 문제 접근 방법: 구현
 """
 from itertools import combinations
+from collections import Counter
 
 def solution(orders, course):
     answer = []
-    alphabet_set = set()
-    for order in orders:
-        for o in order:
-            alphabet_set.add(o)
-    alphabet_set = list(alphabet_set)
-    alphabet_set.sort()
-    c_list = []
     for c in course:
-        combi = combinations(alphabet_set, c)
-        c_temp = []
-        for com in combi:
-            c_temp.append(''.join(com))
-        c_list.append(c_temp)
-    res = []
-
-    return answer
+        combi_list = []
+        for order in orders:
+            combi = combinations(sorted(order), c)
+            for cb in combi:
+                combi_list.append(cb)
+        counter = Counter(combi_list)
+        if len(counter) >= 1 and max(counter.values()) > 1:
+            for ct in counter:
+                if counter[ct] == max(counter.values()):
+                    answer.append(''.join(ct))
+    return sorted(answer)
 
 orders = ["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"]
 course = [2,3,5]
