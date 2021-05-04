@@ -1,6 +1,6 @@
 """
 문제 링크: https://programmers.co.kr/learn/courses/30/lessons/72412
-문제 접근 방법: 구현
+문제 접근 방법: 자료구조 + 이분 탐색
 """
 def make_combi(info_list, index, dic_res, dic, sum):
     if index == 4:
