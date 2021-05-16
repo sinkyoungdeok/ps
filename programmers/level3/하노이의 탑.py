@@ -1,6 +1,6 @@
 """
 문제 링크: https://programmers.co.kr/learn/courses/30/lessons/12946
-문제 접근 방법: dfs
+문제 접근 방법: 재귀
 """
 
 def hanoi(n, froms, to, temp,ans):
