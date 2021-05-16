@@ -20,18 +20,18 @@ def solution(tickets):
 
     st = deque()
     st.append("ICN")
-    answer.append("ICN")
     while st:
-        curr = st.pop()
+        curr = st[-1]
 
         if dic.get(curr) and len(dic[curr]):
             next = heapq.heappop(dic[curr])
             st.append(next)
-            answer.append(next)
+        else:
+            answer.append(st.pop())
         
     
 
-    return answer
+    return answer[::-1]
 
-tickets = [["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]
+tickets = [["ICN", "COO"], ["ICN", "BOO"], ["COO", "ICN"], ["BOO", "DOO"]]
 print(solution(tickets))
