@@ -1,7 +1,8 @@
 """
 문제 링크: https://programmers.co.kr/learn/courses/30/lessons/12936
 문제 접근 방법: 조합 
-"""
+==> 정확성은 맞췄지만, 효율성은 통과 못함. 다시 풀어야 될듯
+""" 
 from itertools import permutations
 
 def solution(n, k):
