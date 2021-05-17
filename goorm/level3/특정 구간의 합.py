@@ -6,9 +6,7 @@
 N = int(input())
 n_list = [0] + list(map(int,input().split()))
 A, B = map(int,input().split())
-for i in range(1, N):
+for i in range(1, N+1):
     n_list[i] += n_list[i-1]
-
-print(*n_list)
 
 print(n_list[B] - n_list[A-1])
