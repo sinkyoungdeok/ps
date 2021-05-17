@@ -1,10 +1,3 @@
-### python으로 알고리즘 1일 1문제 
-- 월요일: dfs, bfs, 플로이드
-- 화요일: dp, 위상정렬
-- 수요일: 구현
-- 목요일: 투포인터
-- 금요일: 그리디 
-- 주말: 다익스트라
 ### programmers
 - id: sinkyoungdeok
 ### 백준 & solved.ac
