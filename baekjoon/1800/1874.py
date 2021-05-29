@@ -20,6 +20,7 @@ for i in range(n):
     else:
         print('NO')
         check = False
+        break
 
 if check:
     for i in res:
