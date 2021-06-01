@@ -1,6 +1,6 @@
 """
 문제 링크: https://www.acmicpc.net/problem/2573
-아직 미완성.. 시간초과 뜸 .
+문제 접근 방법: bfs
 """
 
 from collections import deque
@@ -12,50 +12,65 @@ for i in range(N):
 
 di = [0,0,1,-1]
 dj = [1,-1,0,0]
-res = 0
-while True:
-    temp = deepcopy(B)
-    
-    two_check = 0
-    q = deque()
-    for i in range(N):
-        for j in range(M):
-            if temp[i][j] > 0 :
-                two_check+=1
-                q.append((i,j))
-                temp[i][j] = 0
-                while q:
-                    ci,cj = q.popleft()
-                    
-                    for d in range(4):
-                        ni,nj = ci + di[d], cj+ dj[d]
 
-                        if not ( 0<=ni<N and 0<=nj<M):
-                            continue
-                        
-                        if temp[ni][nj] > 0:
-                            q.append((ni,nj))
-                            temp[ni][nj] = 0
-    if two_check >= 2:
-        break
-
-    minus_temp = [[0] * M for _ in range(N)]
-    
+def zero_check():
     for i in range(N):
         for j in range(M):
             if B[i][j] > 0 :
-                for d in range(4):
-                    ni, nj = i + di[d], j + dj[d]
-                    if not ( 0<=ni<N and 0<=nj<M):
-                            continue
-                    if B[ni][nj] <= 0 :
-                        minus_temp[i][j] -= 1 
-    
+                return False
+    return True
+
+def count_around(ci,cj,temp):
+    cnt = 0 
+    for d in range(4):
+        ni, nj = ci + di[d], cj + dj[d]
+        if 0 <= ni < N and 0 <= nj < M and temp[ni][nj] == 0:
+            cnt+=1
+    return cnt
+
+
+def one_year_later():
+    temp = deepcopy(B)
     for i in range(N):
         for j in range(M):
-            B[i][j] += minus_temp[i][j]
-            if B[i][j] <= 0:
-                B[i][j] = 0
-    res += 1
+            if temp[i][j] != 0:
+                B[i][j] -= count_around(i,j,temp)
+                if B[i][j] < 0:
+                    B[i][j] = 0
 
-print(res)
+def bfs():
+    temp = deepcopy(B)
+    cnt = 0
+    q = deque()
+    for i in range(N):
+        for j in range(M):
+            if temp[i][j] == 0:
+                continue
+            cnt+=1
+            q.append((i,j))
+            temp[i][j] = 0
+            while q:
+                ci ,cj = q.popleft()
+                
+                for d in range(4):
+                    ni, nj = ci+di[d], cj+dj[d]
+                    if 0 <= ni < N and 0 <= nj < M and temp[ni][nj] > 0:
+                        q.append((ni,nj))
+                        temp[ni][nj] = 0
+    if cnt >= 2:
+        return True
+    else:
+        return False
+res = 0
+while True:
+    if zero_check():
+        print(0)
+        break
+    one_year_later()
+    res += 1
+    two_check = 0
+    if bfs():
+        print(res)
+        break
+    
+    
