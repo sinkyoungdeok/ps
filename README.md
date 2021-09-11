@@ -14,3 +14,7 @@
 - <img width="600" height="300" alt="캡처" src="https://user-images.githubusercontent.com/28394879/112164919-a38ac980-8c31-11eb-9cab-6d7b46269a3c.png"> 
 3. 2021 카카오 채용연계형 인턴십 코딩테스트 합격 ( 2021 5월 14일 )
 - <img width="600" height="400" alt="캡처" src="https://user-images.githubusercontent.com/28394879/118260017-ca0c0900-b4ec-11eb-9fd6-8cf8e5dae331.png">
+4. 2022 카카오 블라인드 코테 합격
+![image](https://user-images.githubusercontent.com/28394879/132940644-ec6aa3ea-d468-40bc-8de4-7a7009d863b0.png)
+- 1,3,4 번 solve
+- 2번은 거의다 풀긴했는데, 나 때문에 합격컷이 올라가는 것을 방지하기 위해서 일부러 2:30 시간 남기고 안풀고 종료
