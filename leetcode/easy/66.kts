@@ -1,12 +1,21 @@
-import kotlin.math.*
-
 class Solution {
     fun plusOne(digits: IntArray): IntArray {
-        var sum = 1
-        digits.forEachIndexed { idx, digit ->
-            sum += digit * (10.0).pow(digits.size-1-idx).toInt()
+        digits[digits.size-1] += 1
+
+        var carry = 0
+        for (i in digits.size-1 downTo 0) {
+            digits[i] += carry
+            carry = 0
+            if (digits[i] == 10) {
+                carry = 1
+                digits[i] = 0
+            }
         }
 
-        return sum.toString().toCharArray().map { it.toString().toInt() }.toIntArray()
+        if(carry == 1) {
+            return intArrayOf(1) + digits
+        }
+
+        return digits
     }
 }
